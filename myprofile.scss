@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+main {
+    padding-bottom: 6em;
+}
+
+.profile-header {
+    background: url(../images/profile-bg.png) rgba($color: #000000, $alpha: .5);
+    background-blend-mode: overlay;
+    background-size: cover;
+    height: 30vh;
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+.payments {
+    display: flex;
+    .makepay,
+    .recpay {
+        width: 50%;
+        background-color: #E55646;
+        padding: 2em 0;
+        text-align: center;
+        h3 {
+            color: white;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+    }
+    .recpay {
+        background-color: #F2695A;
+    }
+}
+
+.menu {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.menu-search {
+    padding: .5em 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5em;
+}
+
+.profile-details-wrappper {
+    display: flex;
+}
+
+.notif {
+    width: 20%;
+}
+
+.pattern {
+    padding: 1em;
+    background-color: #FCCE00;
+    border-top-right-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+    display: flex;
+    align-items: center;
+    img {
+        margin-right: .5em;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+.details {
+    padding-left: .8em;
+    width: 90%;
+    p {
+        color: #FCCE00;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    h1 {
+        font-weight: 300;
+        font-size: 36px;
+        color: white;
+    }
+    .address {
+        font-weight: 300;
+        font-size: 14px;
+        color: white;
+        b {
+            font-weight: 600;
+        }
+    }
+    .comp-rate {
+        margin: .5em 0;
+        font-size: 13px;
+        color: white;
+        font-weight: 400;
+        .percentage {
+            font-weight: 600;
+            color: #FCCE00;
+        }
+    }
+    .rating-stars {
+        margin-top: .5em;
+        img {
+            width: 15px;
+            height: 14px;
+        }
+    }
+}
+
+.overview-section {
+    padding: 2em 0;
+    padding-left: 8%;
+}
+
+.main-heading {
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #5C707D;
+    text-transform: uppercase;
+}
+
+.ovw-card-container {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.ovw-card {
+    min-width: 100px;
+    height: 100px;
+    background-color: white;
+    margin-right: 1em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    span {
+        font-weight: 700;
+        font-size: 36px;
+        color: #B0DEDF;
+    }
+    p {
+        font-size: 10px;
+        line-height: 16px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #5C707D;
+    }
+}
+
+.active-projects,
+.bidsown-lost,
+.latest-bids {
+    padding: 0 8%;
+    .main-heading {
+        margin-bottom: 1.5em;
+    }
+}
+
+.bidsown-lost,
+.latest-bids {
+    padding-top: 1em;
+}
+
+.project-card,
+.bid-card {
+    padding: .8em 0;
+    padding-right: 3%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .8em;
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
+    .project-img {
+        margin-left: -2.2%;
+        img {
+            border-radius: 50%;
+        }
+    }
+    .desc-img {
+        display: flex;
+    }
+    .project-desc,
+    .bid-desc {
+        padding-left: 1.2em;
+        h3 {
+            font-size: 12px;
+            color: #5C707D;
+            font-weight: 600;
+            padding-bottom: .4em;
+        }
+        span {
+            display: block;
+            color: #236AAE;
+            font-size: 10px;
+            font-weight: 600;
+        }
+        p {
+            font-size: 10px;
+            font-weight: 300;
+            color: #5C707D;
+        }
+    }
+    .project-rate,
+    .bid-rate {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: .8em;
+        border-left: 1px solid #97979777;
+        p {
+            font-size: 18px;
+            font-weight: 600;
+            color: #5C707D;
+            padding-bottom: .3em;
+        }
+        span {
+            color: white;
+            background-color: #7ED321;
+            font-size: 9px;
+            font-weight: 600;
+            padding: .3em 0;
+            border-radius: 1em;
+            text-align: center;
+            text-transform: uppercase;
+            width: 61px;
+        }
+    }
+    .bid-rate {
+        span {
+            background-color: #2EBFD9;
+        }
+    }
+}
+
+.pny-card {
+    .bid-rate {
+        span {
+            padding: .3em 0;
+        }
+    }
+}
+
+.lost-bid {
+    background-color: #F2695A !important;
+}
+
+.bid-placed {
+    background-color: #F5A623 !important;
+}

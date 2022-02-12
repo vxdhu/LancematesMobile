@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Projects</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/placebid.css">
+    <link rel="stylesheet" href="css/utilsmenu.css">
+    <link rel="stylesheet" href="css/nav-menu.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu-search">
+            <button class="menu"><img src="images/menuicon.svg" alt="menuicon"></button>
+            <img src="images/searchicon.svg" alt="searchicon">
+        </div>
+        <div class="profile-details-wrappper">
+            <div class="notif">
+
+                <div class="pattern">
+                    <p>6 days,<br> 23 hours left</p>
+                    <p>OPEN</p>
+                </div>
+
+            </div>
+
+            <div class="details">
+
+                <p>Less than 2 KMS</p>
+                <h1>create a Mockup for <br> my website in Adobe …</h1>
+
+            </div>
+
+        </div>
+        <div class="detail-divider"></div>
+        <div class="pr-details-container">
+            <div class="prdetail-card">
+                <h3>200</h3>
+                <p>BIDS</p>
+            </div>
+            <div class="prdetail-card">
+                <h3>€394</h3>
+                <p>Avg Bid (EUR)</p>
+            </div>
+            <div class="prdetail-card">
+                <h3>€250 - €750</h3>
+                <p>Project Budget (EUR)</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="place-bid-container">
+            <h2 class="main-heading">YOUR BID PROPOSAL</h2>
+            <form action="#" class="bid-details-grid">
+
+                <div class="bid-proposal">
+                    <p>Proposal</p>
+                    <textarea name="bid prposal" id="" cols="30" rows="3"></textarea>
+
+
+                </div>
+                <div class="proposal-rate">
+                    <div>
+                        <input type="number" placeholder="Proposed Rate">
+                        <select name="curr" id="">
+                            <option value="$">USD</option>
+                            <option value="$">INR</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>Your Project Fee</p> <span>500USD</span>
+                    </div>
+                    <div>
+                        <p>Your Total Bid</p> <span style="color: #F2695A;">530USD</span>
+                    </div>
+
+
+                </div>
+                <div class="deliver-in">
+                    <p>Deliver in</p>
+                    <select name="deliver" id="">
+                        <option value="days">Days</option>
+                    </select>
+                </div>
+                <div class="completion-date">
+                    <div>
+                        <p>I can complete by</p>
+                        <input type="date">
+                    </div>
+                    <div class="toggle-holder"> <input type="checkbox" id="switch" /><label for="switch">Toggle</label></div>
+                </div>
+                <div class="payment">
+                    <p>Payment</p>
+                    <select name="payment" id="">
+                        <option value="days">PayTM</option>
+                    </select>
+                </div>
+                <div class="portfolio-link">
+                    <input type="text" placeholder="Portfolio Link">
+                </div>
+                <div class="attachments">
+                    <input type="text" placeholder="Attachment">
+                </div>
+
+
+
+
+                <button id="placebid-final">PLACE BID</button>
+
+            </form>
+
+
+
+        </section>
+    </main>
+    <section class="utils-menu">
+
+        <a href="createproject.html">
+            <div id="createbtn" class="util-div">
+                <img src="images/addtask.png" alt="">
+                <span class="createtask">CREATE TASK</span>
+            </div>
+        </a>
+        <div class="util-divider"></div>
+        <a href="browseprojects.html">
+            <div class="util-div">
+                <img src="images/projects.png" alt="">
+                <span>PROJECTS</span>
+            </div>
+        </a>
+        <div class="util-divider"></div>
+        <div class="util-div">
+            <img src="images/massenger.png" alt="">
+            <span>MESSENGER</span>
+        </div>
+        <div class="util-divider"></div>
+        <div class="util-div">
+            <img src="images/alerts.png" alt="">
+            <span>ALERTS</span>
+        </div>
+
+
+
+    </section>
+    <section class="navigation-menu">
+        <nav>
+
+            <ul class="navlinks">
+
+                <li>
+                    <a href="#" class="main-link"><img src="images/dashboadricon.svg" alt=""> DASHBOARD</a>
+                </li>
+                <li>
+                    <a href="#" class="main-link"><img src="images/settings.svg" alt=""> ACCOUNT SETTINGS</a>
+                    <a href="myprofile.html" class="sub-link">PROFILE</a>
+                    <a href="#" class="sub-link">PAYMENT INFO</a>
+                    <a href="#" class="sub-link">MASSENGER</a>
+                </li>
+                <li>
+                    <a href="#" class="main-link"><img src="images/projectsico.svg" alt=""> MY PROJECTS</a>
+                    <a href="browseprojects.html" class="sub-link">BROWSE</a>
+                    <a href="createproject.html" class="sub-link">CREATE PROJECT</a>
+                    <a href="#" class="sub-link">PROJECTS CREATED</a>
+                    <a href="#" class="sub-link">OWNED PROJECTS</a>
+                </li>
+                <li class="logout-link">
+                    <a href="index.html" class="main-link"><img src="images/Logout.svg" alt="">LOGOUT</a>
+
+                </li>
+
+
+
+            </ul>
+        </nav>
+
+
+
+
+
+
+    </section>
+
+
+    <!-- NAVIGATION JS -->
+    <script>
+        const menubtn = document.querySelector('.menu');
+        const navmenu = document.querySelector('.navigation-menu');
+        menubtn.addEventListener('click', () => {
+            navmenu.classList.toggle('active')
+        })
+
+
+
+        // View All Categories
+        const viewallbtn = document.querySelector('#viewallcats');
+        const cats = document.querySelector('.cats');
+        viewallbtn.addEventListener('click', () => {
+            cats.classList.toggle('viewall')
+        })
+    </script>
+</body>
+
+</html>

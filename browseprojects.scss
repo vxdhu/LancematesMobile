@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #EDF2F5;
+}
+
+header {
+    background: url(../images/avel-chuklanov-DUmFLtMeAbQ-unsplash.jpg) rgba($color: #000000, $alpha: .5);
+    background-blend-mode: overlay;
+    background-size: cover;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.payments {
+    display: flex;
+    .makepay,
+    .recpay {
+        width: 50%;
+        background-color: #E55646;
+        padding: 2em 0;
+        text-align: center;
+        h3 {
+            color: white;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+    }
+    .recpay {
+        background-color: #F2695A;
+    }
+}
+
+.menu {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.menu-search {
+    padding: .5em 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5em;
+}
+
+.profile-details-wrappper {
+    display: flex;
+}
+
+.notif {
+    width: 20%;
+}
+
+.pattern {
+    padding: 1em;
+    background-color: #FCCE00;
+    border-top-right-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+    display: flex;
+    align-items: center;
+    img {
+        margin-right: .5em;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+.details {
+    padding-left: .8em;
+    width: 90%;
+    p {
+        color: #FCCE00;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    h1 {
+        font-weight: 300;
+        font-size: 36px;
+        color: white;
+    }
+}
+
+main {
+    padding-bottom: 5em;
+}
+
+.add-verify {
+    background-color: #F2695A;
+    padding: 1.5em 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+        font-size: 10px;
+        color: white;
+    }
+    img {
+        margin-right: 1.8em;
+    }
+}
+
+.main-heading {
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #5C707D;
+    text-transform: uppercase;
+}
+
+.categories-section {
+    padding: 2em 0;
+}
+
+.btn-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+}
+
+.viewall-btn {
+    background-color: #5C707D;
+    color: white;
+    font-size: 9px;
+    font-weight: 400;
+    border: none;
+    padding: .6em 1em;
+    border-radius: 1.5em;
+    outline: none;
+}
+
+.cats {
+    display: flex;
+    padding-top: 1.5em;
+    overflow-x: scroll;
+    &.viewall {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1em;
+        row-gap: 1em;
+        padding-left: 8%;
+        padding-right: 8%;
+        overflow-x: unset;
+        .cat-card {
+            margin-right: 0;
+            min-width: auto;
+        }
+    }
+}
+
+.cat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 1.25em;
+    p {
+        font-size: 7px;
+        font-weight: 400;
+        text-align: center;
+        color: #5C707D;
+        padding-top: .8em;
+    }
+    span {
+        display: block;
+        font-size: 7px;
+        color: #39B5E3;
+        padding-top: .25em;
+    }
+}
+
+.browse-section {
+    padding: 0 8%;
+    .btn-heading {
+        padding: 0
+    }
+    button {
+        background: none;
+    }
+}
+
+// prcard
+.pr-container {
+    padding-top: 1em;
+}
+
+.active-projects,
+.bidsown-lost,
+.latest-bids {
+    padding: 0 8%;
+    .main-heading {
+        margin-bottom: 1.5em;
+    }
+}
+
+.bidsown-lost,
+.latest-bids {
+    padding-top: 1em;
+}
+
+.project-card,
+.bid-card {
+    padding: .8em 0;
+    padding-right: 3%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .8em;
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
+    .project-img {
+        margin-left: -2.2%;
+        img {
+            border-radius: 50%;
+        }
+    }
+    .desc-img {
+        display: flex;
+    }
+    .project-desc,
+    .bid-desc {
+        padding-left: 1.2em;
+        h3 {
+            font-size: 12px;
+            color: #5C707D;
+            font-weight: 600;
+            padding-bottom: .4em;
+        }
+        span {
+            display: block;
+            color: #236AAE;
+            font-size: 10px;
+            font-weight: 600;
+        }
+        p {
+            font-size: 10px;
+            font-weight: 300;
+            color: #5C707D;
+        }
+    }
+    .project-rate,
+    .bid-rate {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: .8em;
+        border-left: 1px solid #97979777;
+        p {
+            font-size: 18px;
+            font-weight: 600;
+            color: #5C707D;
+            padding-bottom: .3em;
+        }
+        span {
+            color: white;
+            background-color: #7ED321;
+            font-size: 9px;
+            font-weight: 600;
+            padding: .3em 0;
+            border-radius: 1em;
+            text-align: center;
+            text-transform: uppercase;
+            width: 61px;
+        }
+    }
+    .bid-rate {
+        span {
+            background-color: #2EBFD9;
+        }
+    }
+}
+
+.pny-card {
+    .bid-rate {
+        span {
+            padding: .3em 0;
+        }
+    }
+}
+
+.lost-bid {
+    background-color: #F2695A !important;
+}
+
+.bid-placed {
+    background-color: #F5A623 !important;
+}

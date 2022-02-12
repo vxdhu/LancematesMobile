@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #EDF2F5;
+}
+
+header {
+  background-color: #4A5668;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+main {
+  padding-bottom: 10em;
+}
+
+.menu {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.menu-search {
+  padding: .5em 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5em;
+}
+
+.profile-details-wrappper {
+  display: flex;
+}
+
+.notif {
+  width: 20%;
+}
+
+.pattern {
+  padding: .7em .25em;
+  background-color: #7ED321;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pattern img {
+  margin-right: .5em;
+}
+
+.pattern p {
+  font-size: 7px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+
+.pattern p:last-of-type {
+  padding-top: 1.5em;
+}
+
+.details {
+  padding-left: .8em;
+  width: 90%;
+}
+
+.details p {
+  color: #FCCE00;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.details h1 {
+  font-weight: 300;
+  font-size: 20px;
+  color: white;
+}
+
+.detail-divider {
+  background-color: #CBF0F0;
+  width: 18px;
+  height: 4px;
+  border-radius: 2px;
+  display: block;
+  margin: 1em auto;
+  margin-top: 1.5em;
+}
+
+.pr-details-container {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.pr-details-container .prdetail-card {
+  text-align: center;
+  padding: 1.5em 1.5em;
+  background-color: #3B4453;
+  border-radius: 10px;
+  margin-right: 1.25em;
+  min-width: max-content;
+}
+
+.pr-details-container .prdetail-card h3 {
+  color: #FCCE00;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.pr-details-container .prdetail-card p {
+  letter-spacing: 1px;
+  color: white;
+  font-size: 7px;
+  padding-top: .5em;
+  text-transform: uppercase;
+}
+
+.pr-details-container .prdetail-card:last-of-type {
+  margin-right: 0;
+}
+
+.main-heading {
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #5C707D;
+  text-transform: uppercase;
+}
+
+.main-heading span {
+  color: #F2695A;
+}
+
+.project-desc {
+  padding: 2em 8%;
+}
+
+.desc-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5em;
+  margin: 1.5em 0;
+  box-shadow: 0px 1px 15px 5px #E2ECF2;
+}
+
+.desc-card p {
+  font-size: 10px;
+  font-weight: 300;
+  color: #5C707D;
+  line-height: 21px;
+}
+
+.emp-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5em;
+  padding-bottom: 0;
+  margin: 1.5em 0;
+  box-shadow: 0px 1px 15px 5px #E2ECF2;
+  position: relative;
+}
+
+.emp-card .project-image {
+  position: absolute;
+  top: 1.5em;
+  left: -10px;
+}
+
+.emp-card .emp-details {
+  padding-left: 1.8em;
+}
+
+.emp-card .emp-details p {
+  font-size: 14px;
+  color: #4A4A4A;
+}
+
+.emp-card .emp-details p:first-of-type {
+  color: #46454C;
+  font-weight: 500;
+}
+
+.emp-card .emp-details p:nth-of-type(2) {
+  font-size: 12px;
+  color: #39B5E3;
+  font-weight: 300;
+  padding-bottom: .3em;
+}
+
+.emp-card .emp-details b {
+  font-size: 14px;
+  font-weight: 600;
+  color: #46454C;
+}
+
+.emp-card .stars-rev {
+  padding-left: 1.8em;
+  display: flex;
+  align-items: center;
+  padding-top: .6em;
+}
+
+.emp-card .stars-rev .stars {
+  margin-right: 1.5em;
+}
+
+.emp-card .stars-rev p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #46454C;
+}
+
+.emp-card .stars-rev p span {
+  color: #F2695A;
+  margin-right: .5em;
+}
+
+.emp-card .ver-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 2em;
+}
+
+.emp-card .ver-card {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.emp-card .ver-card p {
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #5C707D;
+  padding-top: 1em;
+}
+
+.emp-card .ver-card:nth-of-type(2) {
+  border-left: 1px solid #DBDBDB;
+  border-right: 1px solid #DBDBDB;
+}
+
+.bidder-card {
+  background-color: white;
+  position: relative;
+  padding: 1.5em;
+  padding-top: 0;
+  border-radius: 10px;
+  margin: 1.5em 0;
+}
+
+.bidder-card .bidder-image {
+  position: absolute;
+  top: 1em;
+  left: -10px;
+}
+
+.bidder-card .bidder-details {
+  padding-left: 1.8em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bidder-card .bidder-details p {
+  font-size: 10px;
+  color: #236AAE;
+  font-weight: 600;
+  padding-top: .5em;
+}
+
+.bidder-card .bidder-details div:first-of-type {
+  text-align: left;
+  padding-top: 1em;
+}
+
+.bidder-card .bidder-details div:first-of-type h3 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #5C707D;
+}
+
+.bidder-card .bidder-details div:nth-of-type(2) {
+  padding-top: 1em;
+  text-align: center;
+  border-left: 1px solid #DBDBDB;
+  padding-left: 1em;
+}
+
+.bidder-card .bidder-details div:nth-of-type(2) h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #5C707D;
+}
+
+.bidder-card .bidder-stats {
+  padding-top: 1em;
+  padding-left: 1.8em;
+}
+
+.bidder-card .bidder-stats p,
+.bidder-card .bidder-stats .bidderratinggg {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  padding: .5em 0;
+  color: #4A4A4A;
+}
+
+.bidder-card .bidder-stats p span,
+.bidder-card .bidder-stats .bidderratinggg span {
+  color: #F2695A;
+  padding-right: .3em;
+}
+
+.bidder-card .rating-bar {
+  display: inline-block;
+  width: 65px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #D9D9D9;
+  position: relative;
+  margin-top: .15em;
+}
+
+.bidder-card .rating-bar p {
+  font-size: 9px;
+  font-weight: 600;
+  color: white;
+  padding: 0;
+}
+
+.bidder-card .inner-bar {
+  width: 80%;
+  height: 100%;
+  background-color: #7ED321;
+  border-radius: 2px;
+}
+
+.bidder-card .dollar-div {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 15.2px;
+  height: 15.2px;
+  border-radius: 50%;
+  background-color: #7ED321;
+  border: .8px solid #EDF2F5;
+  top: -6px;
+}
+
+.placebidbtn {
+  font-size: 18px;
+  font-weight: 700;
+  color: #4A4A4A;
+  background-color: #FCCE00;
+  border: none;
+  outline: none;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 45%;
+  position: fixed;
+  bottom: 12.5%;
+  left: calc(45%/2);
+  right: calc(45%/2);
+  padding: .8em 0;
+  border-radius: 1.5em;
+}
